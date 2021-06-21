@@ -1,6 +1,5 @@
-import React from 'react';
 import { useFrame } from '@react-three/fiber';
-import * as THREE from 'three';
+// import * as THREE from 'three';
 import state from '../state';
 
 function CameraControls() {

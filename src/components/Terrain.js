@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
+// import { useFrame } from '@react-three/fiber';
 const GROUND_HEIGHT = -100; // A Constant to store the ground height of the game.
 
 function Terrain() {
@@ -16,11 +16,11 @@ function Terrain() {
       ref={terrain}
     >
       <planeBufferGeometry attach="geometry" args={[5000, 5000, 128, 128]} />
-      <meshStandardMaterial
+      <meshDepthMaterial
         attach="material"
         color="white"
-        roughness={1}
-        metalness={0}
+        roughness={0}
+        metalness={1}
         wireframe={true}
       />
     </mesh>

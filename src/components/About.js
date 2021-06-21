@@ -1,9 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCodeBranch,
-  faGlobe,
-  faStrikethrough,
-} from '@fortawesome/free-solid-svg-icons';
+import { faCodeBranch, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const style = {
   position: 'fixed',
@@ -22,7 +18,8 @@ function About() {
       </h1>
       <p>
         Welcome to my{' '}
-        <span style={{ textDecoration: 'line-through' }}>simple</span> portfolio{' '}
+        <span style={{ textDecoration: 'line-through' }}>simple</span> 🤔
+        portfolio
       </p>
       <a href="https://github.com/resonantdoghouse">
         github <FontAwesomeIcon icon={faCodeBranch} />

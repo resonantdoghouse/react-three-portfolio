@@ -1,9 +1,8 @@
-import { CubeTextureLoader, TextureLoader } from 'three';
+import { TextureLoader } from 'three';
 import * as THREE from 'three';
-import { useLoader, useThree } from '@react-three/fiber';
+import { useLoader } from '@react-three/fiber';
 
 function Image(props) {
-  console.log(props);
   const texture = useLoader(TextureLoader, props.image);
   texture.magFilter = THREE.NearestFilter;
   texture.minFilter = THREE.NearestFilter;

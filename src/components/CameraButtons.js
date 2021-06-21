@@ -1,4 +1,10 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faChevronCircleLeft,
+  faChevronCircleRight,
+} from '@fortawesome/free-solid-svg-icons';
 import state from '../state';
+import { playSong } from '../music';
 
 const style = {
   zIndex: 1,
@@ -7,17 +13,17 @@ const style = {
   // left: '40vw',
   height: '30px',
   width: '30px',
-  background: 'white',
+  background: 'none',
+  color: 'white',
+  border: 'none',
   textAlign: 'center',
-  borderRadius: '100%',
   fontSize: 20,
   fontWeight: 'bold',
-  opacity: 0.7,
-  border: '1px solid black',
+  opacity: 0.9,
   cursor: 'pointer',
 };
 
-const CameraButtons = ({}) => {
+const CameraButtons = () => {
   const sets = {
     // model_3
     1: {
@@ -38,6 +44,7 @@ const CameraButtons = ({}) => {
     state.target.set(...sets[num].target);
     state.activeMeshName = sets[num].name;
     state.shouldUpdate = true;
+    playSong();
   };
   return (
     <>
@@ -45,19 +52,19 @@ const CameraButtons = ({}) => {
         onClick={(e) => handleClick(2)}
         style={{
           ...style,
-          left: '40vw',
+          left: '5vw',
         }}
       >
-        {'<'}
+        <FontAwesomeIcon icon={faChevronCircleLeft} />
       </button>
       <button
         onClick={(e) => handleClick(1)}
         style={{
           ...style,
-          right: '40vw',
+          right: '5vw',
         }}
       >
-        {'>'}
+        <FontAwesomeIcon icon={faChevronCircleRight} />
       </button>
     </>
   );
