@@ -3,6 +3,7 @@
 ## Resource
 
 - [Generative Skyboxes 🤯](http://wwwtyro.github.io/space-3d/#animationSpeed=1&fov=80&nebulae=true&pointStars=true&resolution=1024&seed=101bev92q27k&stars=true&sun=true)
+- [earth texture map](http://planetpixelemporium.com/earth8081.html)
 
 # Getting Started with Create React App
 
