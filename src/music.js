@@ -179,14 +179,6 @@ const highHatPart = new Tone.Sequence(
 const snarePart = new Tone.Sequence(
   function (time, note) {
     drums505.triggerAttackRelease('D4', '4n', time);
-
-    // root.style.setProperty('--snare-scale', '1.6');
-    // root.style.setProperty('--snare-color', 'white');
-
-    // setTimeout(() => {
-    //   root.style.setProperty('--snare-scale', '1');
-    //   root.style.setProperty('--snare-color', 'whitesmoke');
-    // }, 100);
   },
   snarePattern,
   '8n'
