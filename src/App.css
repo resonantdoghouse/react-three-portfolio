@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+canvas {
+  height: 100vh;
+}
+
+.App a {
+  color: firebrick;
+  text-decoration: none;
+}
