@@ -4,7 +4,6 @@ import {
   faChevronCircleRight,
 } from '@fortawesome/free-solid-svg-icons';
 import state from '../state';
-import { playSong } from '../music';
 
 const style = {
   zIndex: 1,
@@ -44,7 +43,6 @@ const CameraButtons = () => {
     state.target.set(...sets[num].target);
     state.activeMeshName = sets[num].name;
     state.shouldUpdate = true;
-    playSong();
   };
   return (
     <>
